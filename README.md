@@ -4,16 +4,16 @@
 3. [More content by Connor Low](#More-content-by-Connor-Low)
 # Features
 ### Fast Response
-[Top of Section](#Features)
+[Top of Section](#Features)  
 ### Responsive Design
-[Top of Section](#Features)
+[Top of Section](#Features)  
 
 # Technologies and Tools
-[Top of Page](#Content)
+[Top of Page](#Content)  
 Proverb is a Counseling Management application built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
 ### RESTful API with Express
 I used **Postman** to test my Express API and add initial data. Postman provides tools to create collections of requests and test scripts.
-![Api Collection Runner](img/api_test_suite.gif)
+![Api Collection Runner](img/api_test_suite.gif)  
 *Running a Postman Test suite to test a collection of API routes all at once.*
 
 The structure of the Express backend immitates layered architecture for a loosely coupled design: my Express app routes requests to controller methods, which pass a callback through a business layer to my data layer, where the results of the asynchronous database query can be sent to the client. Here is an example process used to get a resource by its id:
@@ -61,12 +61,12 @@ app.get('/api/resource', resourceController.searchResources);
     return this.db.findById(this.model, id, handler);
   }
 ```
-[Top of Section](#Technologies-and-Tools)
+[Top of Section](#Technologies-and-Tools)  
 ### Mongo Database
-[Top of Section](#Technologies-and-Tools)
+[Top of Section](#Technologies-and-Tools)  
 ### React
-[Top of Section](#Technologies-and-Tools)
+[Top of Section](#Technologies-and-Tools)  
 
 # More content by Connor Low
-[Top of Page](#Content)
+[Top of Page](#Content)  
 I have been working on a tutorial for deploying Node.JS applications to Heroku. It includes some of the same technologies referenced here. [Click here to check it out](https://github.com/ConnorJamesLow/icc-heroku)!
