@@ -3,10 +3,9 @@
 2. [Technologies and Tools](#Technologies-and-Tools)
 3. [More content by Connor Low](#More-content-by-Connor-Low)
 # Features
-### Fast Response
+![Responsive Grid](img/responsive.gif)
 [Top of Section](#Features)  
 ### Responsive Design
-[Top of Section](#Features)  
 
 # Technologies and Tools
 [Top of Page](#Content)  
@@ -17,7 +16,7 @@ I used **Postman** to test my Express API and add initial data. Postman provides
 *Running a Postman Test suite to test a collection of API routes all at once.*
 
 The structure of the Express backend immitates layered architecture for a loosely coupled design: my Express app routes requests to controller methods, which pass a callback through a business layer to my data layer, where the results of the asynchronous database query can be sent to the client. Here is an example process used to get a resource by its id:
-> Snipit from server script.
+> Server script
 ```js 
 const app = mainController.setup();
 
@@ -26,7 +25,7 @@ app.get('/api/resource/:id', resourceController.getResource);
 app.put('/api/resource/:id', resourceController.updateResource);
 app.get('/api/resource', resourceController.searchResources);
 ```
-> Snipit from Resource Controller
+> Resource Controller
 ```js
   getResource(req, res) {
     const id = DataParser.getParamByName(req, 'id');
@@ -46,7 +45,7 @@ app.get('/api/resource', resourceController.searchResources);
     return manager.getById(id, success, fail);
   }
 ```
-> Snipit from Resource Manager
+> Resource Manager
 ```js
   getById(id, success, fail) {
     const handler = (err, data) => {
