@@ -3,13 +3,15 @@
 2. [Technologies and Tools](#Technologies-and-Tools)
 3. [More content by Connor Low](#More-content-by-Connor-Low)
 # Features
+Proverb is a Counseling Management web application designed to simplify workflow and increase organization. 
 ![Responsive Grid](img/responsive.gif)
-[Top of Section](#Features)  
 ### Responsive Design
+
+[Top of Section](#Features)  
 
 # Technologies and Tools
 [Top of Page](#Content)  
-Proverb is a Counseling Management application built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
+Proverb is built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
 ### RESTful API with Express
 I used **Postman** to test my Express API and add initial data. Postman provides tools to create collections of requests and test scripts.
 ![Api Collection Runner](img/api_test_suite.gif)  
