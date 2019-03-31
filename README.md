@@ -14,13 +14,13 @@
 ![Layout](img/layout.png)
 *The basic application layout*
 
-[Top of Section](#Features)  
+[*Top of Section*](#Features)  
 ### Simple Workflow 
 
-[Top of Section](#Features)  
+[*Top of Section*](#Features)  
 
 # Technologies and Tools
-[Top of Page](#Content)  
+[*Top of Page*](#Content)  
 *Proverb* is built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
 ### RESTful API with Express
 I used **Postman** to test my Express API and add initial data. Postman provides tools to create collections of requests and test scripts.
@@ -72,12 +72,39 @@ app.get('/api/resource', resourceController.searchResources);
     return this.db.findById(this.model, id, handler);
   }
 ```
-[Top of Section](#Technologies-and-Tools)  
+[*Top of Section*](#Technologies-and-Tools)  
 ### Mongo Database
-[Top of Section](#Technologies-and-Tools)  
+In order to improve consistency of data structures, *Proverb* utilizes **Mongoose.js**. This adds some abstractions and utilities for accessing and modifying data. Schemas are used to define the strucutre of documents within a collection. Here is an example schema, used for the resource collection:
+```js
+const resource = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  contentType: {
+    type: String,
+    default: 'Other'
+  },
+  topics: [String],
+  content: {},
+  meta: {
+    author: String,
+    datePublished: {
+      type: String,
+      default: Date.now
+    },
+    dateAdded: {
+      type: String,
+      default: Date.now
+    },
+  }
+}, { collection: 'resource' });
+```  
+
+[*Top of Section*](#Technologies-and-Tools)  
 ### React
-[Top of Section](#Technologies-and-Tools)  
+[*Top of Section*](#Technologies-and-Tools)  
 
 # More content by Connor Low
-[Top of Page](#Content)  
+[*Top of Page*](#Content)  
 I have been working on a tutorial for deploying Node.JS applications to Heroku. It includes some of the same technologies referenced here. [Click here to check it out](https://github.com/ConnorJamesLow/icc-heroku)!
