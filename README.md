@@ -103,7 +103,7 @@ const resource = new mongoose.Schema({
 [*Top of Section*](#Technologies-and-Tools)  
 
 ### React
-*Proverb* has an attractive and practical design, thanks to the Material-UI library, which was created for the React library.
+*Proverb* has an attractive and practical design, thanks to the Material-UI library, which was created for the React library.  
 [*Top of Section*](#Technologies-and-Tools)  
 
 # More content by Connor Low
