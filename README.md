@@ -10,13 +10,13 @@
 
 ### Responsive Design
 *Proverb* utilizes Material-UIs grid system to provide a consistent and responsive design. This allows for productivity on any device, or in combination with other applications sharing screen space. Scrollable sections allow for easy access to multiple features without excessive page scrolling.   
-
-![Layout](img/layout.png)
-*The basic application layout*
-
 [*Top of Section*](#Features)  
-### Simple Workflow 
 
+### Simple Workflow 
+![Layout](img/layout.png)
+*The basic application layout*  
+
+*Proverb* makes resource management easy. Each resource group managed by the app is listed in the **App Navigation**. When one of these resources is selected (e.g. Users), the primary controls and data for that resource is loaded into the **Primary Content** section. From here, additional forms, lists, reports, and other secondary content related to the primary content may be loaded into the **Secondary Content** section. Each section has its own scrollable area so each may be managed independently. This way, the user can manage multiple resources at once without having to open multiple windows for reference.    
 [*Top of Section*](#Features)  
 
 # Technologies and Tools
@@ -100,9 +100,10 @@ const resource = new mongoose.Schema({
   }
 }, { collection: 'resource' });
 ```  
-
 [*Top of Section*](#Technologies-and-Tools)  
+
 ### React
+*Proverb* has an attractive and practical design, thanks to the Material-UI library, which was created for the React library.
 [*Top of Section*](#Technologies-and-Tools)  
 
 # More content by Connor Low
