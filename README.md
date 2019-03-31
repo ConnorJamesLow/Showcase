@@ -3,21 +3,31 @@
 2. [Technologies and Tools](#Technologies-and-Tools)
 3. [More content by Connor Low](#More-content-by-Connor-Low)
 # Features
-Proverb is a Counseling Management web application designed to simplify workflow and increase organization. 
+*Proverb* is a Counseling Management web application designed to simplify workflow and increase organization.  
+
 ![Responsive Grid](img/responsive.gif)
+*A demo of the responsive grid and basic application workflow.*  
+
 ### Responsive Design
+*Proverb* utilizes Material-UIs grid system to provide a consistent and responsive design. This allows for productivity on any device, or in combination with other applications sharing screen space. Scrollable sections allow for easy access to multiple features without excessive page scrolling.   
+
+![Layout](img/layout.png)
+*The basic application layout*
+
+[Top of Section](#Features)  
+### Simple Workflow 
 
 [Top of Section](#Features)  
 
 # Technologies and Tools
 [Top of Page](#Content)  
-Proverb is built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
+*Proverb* is built on a variation of the MEAN stack: **MongoDB**, **Express**, **React**, and **Node**.
 ### RESTful API with Express
 I used **Postman** to test my Express API and add initial data. Postman provides tools to create collections of requests and test scripts.
 ![Api Collection Runner](img/api_test_suite.gif)  
 *Running a Postman Test suite to test a collection of API routes all at once.*
 
-The structure of the Express backend immitates layered architecture for a loosely coupled design: my Express app routes requests to controller methods, which pass a callback through a business layer to my data layer, where the results of the asynchronous database query can be sent to the client. Here is an example process used to get a resource by its id:
+The structure of the Express backend imitates layered architecture for a loosely coupled design: my Express app routes requests to controller methods, which pass a callback through a business layer to my data layer, where the results of the asynchronous database query can be sent to the client. Here is an example process used to get a resource by its id:
 > Server script
 ```js 
 const app = mainController.setup();
