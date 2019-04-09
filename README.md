@@ -6,10 +6,12 @@
 *Proverb* is a Counseling Management web application designed to simplify workflow and increase organization.  
 
 ### Primary Resource Navigation
-*Proverb* provides a simple navigation interface for selecting a primary resource for management so counselees can focus on every noun in the counseling process.
+*Proverb* provides a simple navigation interface for selecting a primary resource for management so counselors can focus on every noun in the counseling process.
 
 ![Selecting a Primary Resource](img/primary-resource.gif)
 *Navigating between resources.*  
+
+[*Top of Features*](#Features)  
 
 ### Relational Management
 No resource in the counseling process is independent. *Proverb* allows the user to easily manage resources connected to the primary resource without leaving their current view.
@@ -17,20 +19,22 @@ No resource in the counseling process is independent. *Proverb* allows the user 
 ![Selecting a Primary Resource](img/secondary-resource.gif)
 *Inspect and edit resources within the current view.*  
 
+[*Top of Features*](#Features)  
+
 ### Responsive Design
 *Proverb* utilizes Material-UIs grid system to provide a consistent and responsive design. This allows for productivity on any device, or in combination with other applications sharing screen space. Scrollable sections allow for easy access to multiple features without excessive page scrolling.   
 
 ![Responsive Grid](img/responsive.gif)
 *Demonstration of the responsive layout.* 
 
-[*Top of Section*](#Features)  
+[*Top of Features*](#Features)  
 
 ### Simple Workflow 
 ![Layout](img/layout.png)
 *The basic application layout.*  
 
 *Proverb* makes resource management easy. Each resource group managed by the app is listed in the **App Navigation**. When one of these resources is selected (e.g. Users), the primary controls and data for that resource is loaded into the **Primary Content** section. From here, additional forms, lists, reports, and other secondary content related to the primary content may be loaded into the **Secondary Content** section. Each section has its own scrollable area so each may be managed independently. This way, the user can manage multiple resources at once without having to open multiple windows for reference.    
-[*Top of Section*](#Features)  
+[*Top of Features*](#Features)  
 
 # Technologies and Tools
 [*Top of Page*](#Content)  
@@ -85,7 +89,9 @@ app.get('/api/resource', resourceController.searchResources);
     return this.db.findById(this.model, id, handler);
   }
 ```
-[*Top of Section*](#Technologies-and-Tools)  
+
+[*Top of Technologies and Tools*](#Technologies-and-Tools)  
+
 ### Mongo Database
 In order to improve consistency of data structures, *Proverb* utilizes **Mongoose.js**. This adds some abstractions and utilities for accessing and modifying data. Schemas are used to define the strucutre of documents within a collection. Here is an example schema, used for the resource collection:
 ```js
@@ -112,12 +118,14 @@ const resource = new mongoose.Schema({
     },
   }
 });
-```  
-[*Top of Section*](#Technologies-and-Tools)  
+```
+
+[*Top of Technologies and Tools*](#Technologies-and-Tools)  
 
 ### React
 *Proverb* has an attractive and practical design, thanks to the Material-UI library, which was created for the React library.  
-[*Top of Section*](#Technologies-and-Tools)  
+
+[*Top of Technologies and Tools*](#Technologies-and-Tools)  
 
 # More content by Connor Low
 [*Top of Page*](#Content)  
