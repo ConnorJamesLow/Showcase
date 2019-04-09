@@ -5,11 +5,24 @@
 # Features
 *Proverb* is a Counseling Management web application designed to simplify workflow and increase organization.  
 
-![Responsive Grid](img/responsive.gif)
-*A demo of the responsive grid and basic application workflow.*  
+### Primary Resource Navigation
+*Proverb* provides a simple navigation interface for selecting a primary resource for management so counselees can focus on every noun in the counseling process.
+
+![Selecting a Primary Resource](img/primary-resource.gif)
+*Navigating between resources.*  
+
+### Relational Management
+No resource in the counseling process is independent. *Proverb* allows the user to easily manage resources connected to the primary resource without leaving their current view.
+
+![Selecting a Primary Resource](img/secondary-resource.gif)
+*Inspect and edit resources within the current view.*  
 
 ### Responsive Design
 *Proverb* utilizes Material-UIs grid system to provide a consistent and responsive design. This allows for productivity on any device, or in combination with other applications sharing screen space. Scrollable sections allow for easy access to multiple features without excessive page scrolling.   
+
+![Responsive Grid](img/responsive.gif)
+*Demonstration of the responsive layout.* 
+
 [*Top of Section*](#Features)  
 
 ### Simple Workflow 
